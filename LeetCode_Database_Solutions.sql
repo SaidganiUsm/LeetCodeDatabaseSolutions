@@ -13,3 +13,10 @@ SELECT FirstName, LastName, City, State
 FROM Person
 LEFT JOIN Address
 ON Person.PersonId = Address.PersonId
+
+# 181. Employees Earning More Than Their Managers
+# Write your MySQL query statement below
+SELECT a.Name AS `Employee`
+FROM `Employee` AS a join `Employee` AS b
+ON a.ManagerId = b.Id
+AND a.Salary > b.Salary
