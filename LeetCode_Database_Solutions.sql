@@ -40,3 +40,8 @@ GROUP BY customer_number ORDER BY COUNT(*) DESC LIMIT 1
 # Write your MySQL query statement below
 SELECT name FROM Customer
 WHERE referee_id IS NULL OR referee_id != 2
+
+# 1527. Patients With a Condition
+# Write your MySQL query statement below
+SELECT patient_id, patient_name, conditions FROM Patients
+WHERE conditions LIKE '%DIAB100%'
