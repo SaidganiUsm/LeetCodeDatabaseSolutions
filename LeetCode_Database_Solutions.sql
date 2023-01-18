@@ -20,3 +20,8 @@ SELECT a.Name AS `Employee`
 FROM `Employee` AS a join `Employee` AS b
 ON a.ManagerId = b.Id
 AND a.Salary > b.Salary
+
+# 182. Duplicate Emails
+# Write your MySQL query statement below
+SELECT email AS Email FROM Person
+GROUP BY Email HAVING COUNT(*) > 1
