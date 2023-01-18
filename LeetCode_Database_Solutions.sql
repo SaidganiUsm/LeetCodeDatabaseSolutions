@@ -44,4 +44,4 @@ WHERE referee_id IS NULL OR referee_id != 2
 # 1527. Patients With a Condition
 # Write your MySQL query statement below
 SELECT patient_id, patient_name, conditions FROM Patients
-WHERE conditions LIKE '%DIAB100%'
+WHERE conditions LIKE '% DIAB1%' OR conditions like'DIAB1%'
