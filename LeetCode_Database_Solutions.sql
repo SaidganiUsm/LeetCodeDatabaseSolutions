@@ -35,3 +35,8 @@ GROUP BY player_id
 # Write your MySQL query statement below
 SELECT customer_number FROM Orders
 GROUP BY customer_number ORDER BY COUNT(*) DESC LIMIT 1
+
+# 584. Find Customer Referee
+# Write your MySQL query statement below
+SELECT name FROM Customer
+WHERE referee_id IS NULL OR referee_id != 2
