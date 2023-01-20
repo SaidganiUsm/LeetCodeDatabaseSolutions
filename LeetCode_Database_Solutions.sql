@@ -45,3 +45,8 @@ WHERE referee_id IS NULL OR referee_id != 2
 # Write your MySQL query statement below
 SELECT patient_id, patient_name, conditions FROM Patients
 WHERE conditions LIKE '% DIAB1%' OR conditions like'DIAB1%'
+
+# 595. Big Countries
+# Write your MySQL query statement below
+SELECT name, population, area FROM World
+WHERE population > 25000000 OR area >= 3000000
