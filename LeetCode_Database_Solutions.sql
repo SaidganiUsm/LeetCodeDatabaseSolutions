@@ -48,5 +48,5 @@ WHERE conditions LIKE '% DIAB1%' OR conditions like'DIAB1%'
 
 # 595. Big Countries
 # Write your MySQL query statement below
-SELECT name, population, area FROM World
-WHERE population > 25000000 OR area >= 3000000
+SELECT `name`,`population`,`area` FROM `World` 
+WHERE `population`>= 25000000 OR `area`>3000000
