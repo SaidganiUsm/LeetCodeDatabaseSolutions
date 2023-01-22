@@ -50,3 +50,10 @@ WHERE conditions LIKE '% DIAB1%' OR conditions like'DIAB1%'
 # Write your MySQL query statement below
 SELECT `name`,`population`,`area` FROM `World` 
 WHERE `population`>= 25000000 OR `area`>3000000
+
+# 197. Rising Temperature
+# Write your MySQL query statement below
+SELECT DISTINCT a.Id
+FROM Weather a,Weather b
+WHERE a.Temperature > b.Temperature
+AND DATEDIFF(a.Recorddate, b.Recorddate) = 1
