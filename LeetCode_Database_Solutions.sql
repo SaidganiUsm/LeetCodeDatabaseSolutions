@@ -57,3 +57,11 @@ SELECT DISTINCT a.Id
 FROM Weather a,Weather b
 WHERE a.Temperature > b.Temperature
 AND DATEDIFF(a.Recorddate, b.Recorddate) = 1
+
+# 196. Delete Duplicate Emails
+# Please write a DELETE statement and DO NOT write a SELECT statement.
+# Write your MySQL query statement below
+DELETE a
+FROM Person a, Person b
+WHERE a.Email = b.Email AND
+      a.Id > b.Id;
